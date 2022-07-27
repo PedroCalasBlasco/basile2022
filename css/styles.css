@@ -1,0 +1,234 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+header{
+    margin-top: 2px;
+    border-bottom: 1px solid black;
+    font-size: 1.3em;
+}
+
+
+
+header .iconsDiv:hover{
+    cursor: pointer;
+    background-color: rgb(243,114,44);
+    color:white;
+}
+
+
+nav{
+    background-color: white;
+}
+
+nav .navegacion a{
+    color: black;
+    text-decoration: none
+}
+
+
+nav .navegacion a:hover{
+    color: rgb(243, 114, 44);
+    cursor: pointer;
+}
+
+
+
+
+#programasCentrales .card i{
+    font-size: 1.3em;
+}
+
+#programasCentrales .card p:hover {
+    color: white;
+}
+
+#programasCentrales .card a {
+    color: grey;
+}
+
+/* #programasCentrales .card a:hover {
+    color: white;
+} */
+
+#programasCentrales .card p {
+    color: rgb(0, 120, 155);
+}
+
+#programasCentrales .card:hover * {
+    background-color: rgb(243, 114, 44);
+    color: white;
+    cursor: pointer;
+}
+
+
+#proyectosLegislativos i{
+    font-size: 1.5em;
+}
+
+
+
+.blueSpan {
+    color: rgb(0, 120, 155);
+}
+
+
+
+#proyectosLegislativos{
+    background-color: rgb(238,241,246);
+}
+
+
+#proyectosLegislativos .card:hover {
+    background-color: rgb(243, 114, 44);
+    color: white;
+    cursor: pointer;
+}
+
+
+#noticiasNovedades{
+        background: #ffffff;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #ffffff 50%, #eef1f6 50%, #eef1f6 50%, #ffffff 50%, #eef1f6 50%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ffffff 50%, #eef1f6 50%, #eef1f6 50%, #ffffff 50%, #eef1f6 50%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #ffffff 50%, #eef1f6 50%, #eef1f6 50%, #ffffff 50%, #eef1f6 50%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eef1f6', GradientType=0);
+        /* IE6-9 */
+}
+
+#noticiasNovedades:hover{
+    cursor: pointer;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: rgb(243, 114, 44);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+
+#redesSociales{
+    background-color: rgb(238, 241, 246);
+}
+
+#redesSociales #facebook{
+    color:white;
+    background-color: rgb(59, 89, 152);
+}
+
+#redesSociales #facebook:hover {
+    cursor: pointer;
+}
+
+#redesSociales #instagram {
+    color: white;
+    background-color: rgb(225, 48, 108);
+}
+
+#redesSociales #instagram:hover {
+    cursor: pointer;
+}
+
+#redesSociales #twitter {
+    color: white;
+    background-color: rgb(2, 140, 193);
+}
+
+#redesSociales #twitter:hover {
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: rgb(34,56,66);
+    color: white;
+}
+
+footer i {
+    padding: 8px;
+}
+
+footer i:hover{
+    background-color: rgb(243, 114, 44);
+    cursor: pointer;
+}
+
+
+
+
+/* PAGINA GROOMING */
+
+
+#groomingViolencia{
+    background-color: rgb(238, 241, 246);
+}
+
+#groomingVideo{
+    background-color: rgb(238, 241, 246);
+}
+
+
+.textColumns p{
+    
+    padding: 10px;
+    width: 100%;
+    column-count: 3;
+    column-gap: 2em;
+    column-rule: 2px solid rgb(243, 114, 44);
+    -moz-column-count: 3;
+    -moz-column-gap: 2em;
+    -moz-column-rule: 2px solid rgb(243, 114, 44);
+    -webkit-column-count: 3;
+    -webkit-column-gap: 3em;
+    -webkit-column-rule: 2px solid rgb(243, 114, 44);
+}
+
+
+
+
+/* PAGINA CONTACTO */
+
+#encabezado{
+    background-color: rgb(67, 170, 139);
+    height: 32vh;
+    color: white;
+}
+
+#map{
+    height: 50vh;
+    background-color: rgb(238, 241, 246);
+}
+
+#map .rowMap{
+    height: 50vh;
+}
+
+
+#map #infoContacto{
+    background-color: rgb(67, 170, 139);
+    color: white;
+}
+
+#contactoSection .btn{
+    background-color: rgb(243, 114, 44);
+    color: white;
+}
+
+#contactoSection input {
+    background-color: rgb(238, 241, 246);
+}
+
+#contactoSection textarea {
+    background-color: rgb(238, 241, 246);
+}
+
