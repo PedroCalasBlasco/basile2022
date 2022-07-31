@@ -6,7 +6,9 @@
 }
 
 
-
+a{
+    text-decoration: none;
+}
 
 header{
     margin-top: 2px;
@@ -40,6 +42,30 @@ nav .navegacion a:hover{
 
 
 
+.carousel-caption {
+    bottom: 12rem !important;
+    left: 17% !important;
+    text-align: start !important;
+    width: 30% !important;
+}
+
+
+.carousel-caption h5{
+    font-size: 2.25em;
+}
+
+
+.carousel-indicators {
+    bottom: 80px;
+    justify-content: start;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
 
 #programasCentrales .card i{
     font-size: 1.3em;
@@ -57,7 +83,15 @@ nav .navegacion a:hover{
     color: white;
 } */
 
-#programasCentrales .card p {
+#programasCentrales .card i{
+    color:black;
+}
+
+#programasCentrales .card h5{
+    color: black;
+}
+
+#programasCentrales .card p{
     color: rgb(0, 120, 155);
 }
 
@@ -82,10 +116,15 @@ nav .navegacion a:hover{
 
 #proyectosLegislativos{
     background-color: rgb(238,241,246);
+    color: black;
 }
 
 
-#proyectosLegislativos .card:hover {
+#proyectosLegislativos .card{
+    color: black;
+}
+
+#proyectosLegislativos .card:hover * {
     background-color: rgb(243, 114, 44);
     color: white;
     cursor: pointer;
@@ -232,3 +271,7 @@ footer i:hover{
     background-color: rgb(238, 241, 246);
 }
 
+
+#mapvisitas{
+    height: 60vh;
+}
