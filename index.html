@@ -12,7 +12,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -20,35 +26,46 @@
     <header class="container">
         <div class="row justify-content-end text-center">
             <div class="col col-1 iconsDiv">
-                <i class="fa-brands fa-facebook-f"></i>
+                <a href="https://www.facebook.com/sergiojbasile" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
             <div class="col col-1 iconsDiv">
-                <i class="fa-brands fa-twitter"></i>
+                <a href="https://twitter.com/chechobasile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             </div>
             <div class="col col-1 iconsDiv">
-                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/checho.basile/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     </header>
 
-    <nav class="container-fluid mt-2 sticky-top">
-      <div class="row">
-        <div class="col col-3 text-center">
-            <img src="img/logo.png" alt="">
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: rgb(243,114,44);color:rgb(243,114,44);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 25%;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 pl-5">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="components/novedades.html" class="nav-link" href="#">Novedades</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="components/proyectos.html" class="nav-link">Proyectos</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="components/grooming.html" class="nav-link">Grooming</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="components/contact.html" class="nav-link">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="col col-6">
-            <div class="row pt-3 justify-content-end">
-                <div class="col col-2 navegacion"><a href="#">Inicio</a></div>
-                <div class="col col-2 navegacion"><a href="components/novedades.html">Novedades</a></div>
-                <div class="col col-2 navegacion"><a href="components/proyectos.html">Proyectos</a></div>
-                <div class="col col-2 navegacion"><a href="components/grooming.html">Grooming</a></div>
-                <div class="col col-2 navegacion"> <a href="components/contact.html">Contacto</a></div>
-            </div>
-        </div>
-        <div class="col col-3"></div>
       </div>
     </nav>
 
+    
     <section class="container-fluid mt-3">
       <div class="row justify-content-center">
         <div class="col col-11">
@@ -216,7 +233,6 @@
       </div>
     </section>
 
-
     <section class="container-fluid mt-3 pb-5" id="noticiasNovedades">
       <div class="row">
         <div class="col col-12 mt-5 text-center">
@@ -224,37 +240,8 @@
           <h2 class="mt-1">Noticias y Novedades</h2>
         </div>
       </div>
-      <div class="row mt-5 justify-content-center">
-        <div class="col col-10 col-xl-2">
-            <div class="card">
-                <img src="img/my.png" alt="">
-                <div class="card-body text-start">
-                    <span>11-07-2022</span>
-                    <p class="card-text text-start mt-3">Pullaro y Basile con el sector productivo de la Capital</p>
-                    <a href="#" class="card-link">Leer Más</a>
-                </div>
-            </div>
-        </div>
-        <div class="col col-10 col-xl-2">
-            <div class="card">
-                <img src="img/my.png" alt="">
-                <div class="card-body text-start">
-                    <span>11-07-2022</span>
-                    <p class="card-text text-start mt-3">Pullaro y Basile con el sector productivo de la Capital</p>
-                    <a href="#" class="card-link">Leer Más</a>
-                </div>
-            </div>            
-        </div>
-        <div class="col col-10 col-xl-2">
-            <div class="card">
-                <img src="img/my.png" alt="">
-                <div class="card-body text-start">
-                    <span>11-07-2022</span>
-                    <p class="card-text text-start mt-3">Pullaro y Basile con el sector productivo de la Capital</p>
-                    <a href="#" class="card-link">Leer Más</a>
-                </div>
-            </div>            
-        </div>
+      <div class="row mt-5 justify-content-center" id="noticiasRow">
+        
       </div>
       <div class="row mt-5">
         <div class="col col-12 text-center">
@@ -263,7 +250,7 @@
       </div>
     </section>
 
-
+    
     <section class="container mt-5 pb-3" id="sobreMi">
       <div class="row justify-content-center">
         <div class="col col-12 text-center mt-5">
@@ -337,59 +324,58 @@
         </div>
     </section>
 
-
     <section class="container-fluid mt-3" id="redesSociales">
       <div class="row justify-content-center mt-5">
         <div class="col col-10 col-xl-2 mt-5 pb-5">
-            <div class="card" id="facebook">
-                <div class="card-body text-center">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <h5 class="card-title mt-5">Facebook</h5>
-                    <p class="card-text text-start mt-5">@sergiobasile</p>
-                </div>
-            </div>              
+          <div class="card" id="facebook">
+            <div class="card-body text-center">
+              <i class="fa-brands fa-facebook-f"></i>
+              <h5 class="card-title mt-5">Facebook</h5>
+              <p class="card-text text-start mt-5">@sergiobasile</p>
+            </div>
+          </div>
         </div>
         <div class="col col-10 col-xl-2 mt-5 pb-5">
-            <div class="card" id="instagram">
-                <div class="card-body text-center">
-                    <i class="fa-brands fa-instagram"></i>
-                    <h5 class="card-title mt-5">Instagram</h5>
-                    <p class="card-text text-start mt-5">@sergiobasile</p>
-                </div>
-            </div>              
+          <div class="card" id="instagram">
+            <div class="card-body text-center">
+              <i class="fa-brands fa-instagram"></i>
+              <h5 class="card-title mt-5">Instagram</h5>
+              <p class="card-text text-start mt-5">@sergiobasile</p>
+            </div>
+          </div>
         </div>
         <div class="col col-10 col-xl-2 mt-5 pb-5">
-            <div class="card" id="twitter">
-                <div class="card-body text-center">
-                    <i class="fa-brands fa-twitter"></i>
-                    <h5 class="card-title mt-5">Twitter</h5>
-                    <p class="card-text text-start mt-5">@sergiobasile</p>
-                </div>
-            </div>              
+          <div class="card" id="twitter">
+            <div class="card-body text-center">
+              <i class="fa-brands fa-twitter"></i>
+              <h5 class="card-title mt-5">Twitter</h5>
+              <p class="card-text text-start mt-5">@sergiobasile</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <footer class="container-fluid">
-      <div class="row">
+      <div class="row justify-content-around">
         <div class="col col-12 mt-5 text-center">
           <img src="img/logo2.jpg" alt="">
         </div>
-        <div class="col col-12 col-xl-6 mt-5">
-          <div class="row justify-content-center">
-            <div class="col col-1 iconsDiv">
-              <i class="fa-brands fa-facebook-f"></i>
+        <div class="col col-12 col-xl-5 mt-5 text-end">
+          <div class="row justify-content-end">
+            <div class="col col-1 iconsDiv pr-3">
+              <a href="https://www.facebook.com/sergiojbasile" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
             <div class="col col-1 iconsDiv">
-              <i class="fa-brands fa-twitter"></i>
+              <a href="https://twitter.com/chechobasile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             </div>
             <div class="col col-1 iconsDiv">
-              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/checho.basile/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
         </div>
-        <div class="col col-12 col-xl-6 mt-5 text-center">
-          <p><i class="fa-solid fa-phone"></i> 342-457 3163 int 178</p>
+        <div class="col col-12 col-xl-5 mt-5">
+          <p class="pl-3"><i class="fa-solid fa-phone"></i> 342-457 3163 int 178</p>
         </div>
         <di class="col-12 mt-5 text-center">
             <p>Sergio "Checho" Basile. Diputado Provincial</p>
@@ -402,5 +388,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/novedades.js"></script>
   </body>
 </html>

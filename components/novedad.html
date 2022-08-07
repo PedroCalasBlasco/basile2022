@@ -61,59 +61,23 @@
     </nav>
 
     <section class="container-fluid" id="encabezado">
-        <div class="row align-items-center">
-            <div class="col col-12 text-center pt-5">
-                <h2>Contacto</h2>
-            </div>
+      <div class="row align-items-center">
+        <div class="col col-12 text-center pt-5">
+          <h2>Novedades</h2>
         </div>
+      </div>
     </section>
 
-
-    <section class="container-fluid" id="map">
-        <div class="row justify-content-center rowMap">
-            <div class="col col-12"></div>
-            <div class="col col-6 align-self-end" id="infoContacto">
-                <div class="row text-center">
-                    <div class="col col-4 pt-3 pb-3">General López 3567</div>
-                    <div class="col col-4 pt-3 pb-3">342-457 3163 int 178</div>
-                    <div class="col col-4 pt-3 pb-3">info@sergiobasile.com</div>
-                </div>
-            </div>
-        </div> 
-    </section>
-
-
-    <section class="container" id="contactoSection">
-        <div class="row">
-            <div class="col col-12 text-center mt-5 pt-5">
-                <span class="blueSpan">Contacta con Nosotros</span>
-                <h2>Deja un Mensaje</h2>
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col col-5" id="novedadContent"></div>
+            <div class="col col-4 p-4">
+                <div class="mt-5 p-3" style="background-color: rgb(238, 241, 256)">
+                    <p><strong>Noticias Recientes</strong></p>
+                    <div class="row p-4" id="recentContent"></div>
+                </div>  
             </div>
         </div>
-        <form action="submit">
-            <div class="row justify-content-center mt-5">
-                <div class="col col-3">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Asunto" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <div class="col col-3">
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Correo" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-1">
-                <div class="col col-6">
-                    <div class="input-group">
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                    </div>
-                </div>
-                <div class="col col-12 text-center mt-4 mb-5 pb-5">
-                    <button class="btn btn-danger">Enviar</button>
-                </div>
-            </div>
-        </form>
     </section>
 
 
@@ -144,10 +108,13 @@
       </div>
     </footer>
 
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../js/novedad.js"></script>
   </body>
 </html>
