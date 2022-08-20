@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+
+    <!-- this will fetch the data -->
+
+
     <header class="container">
         <div class="row justify-content-end text-center">
             <div class="col col-1 iconsDiv">
@@ -241,7 +245,8 @@
         </div>
       </div>
       <div class="row mt-5 justify-content-center" id="noticiasRow">
-        
+          <!-- this will show our spinner -->
+          <div hidden id="spinner"></div>
       </div>
       <div class="row mt-5">
         <div class="col col-12 text-center">
@@ -326,16 +331,20 @@
 
     <section class="container-fluid mt-3" id="redesSociales">
       <div class="row justify-content-center mt-5">
-        <div class="col col-10 col-xl-2 mt-5 pb-5">
-          <div class="card" id="facebook">
-            <div class="card-body text-center">
-              <i class="fa-brands fa-facebook-f"></i>
-              <h5 class="card-title mt-5">Facebook</h5>
-              <p class="card-text text-start mt-5">@sergiobasile</p>
+          <div class="col col-10 col-xl-2 mt-5 pb-5">
+            <a href="https://www.facebook.com/sergiojbasile" target="_blank">
+            <div class="card" id="facebook">
+              <div class="card-body text-center">
+                <i class="fa-brands fa-facebook-f"></i>
+                <h5 class="card-title mt-5">Facebook</h5>
+                <p class="card-text text-start mt-5">@sergiobasile</p>
+              </div>
             </div>
+            </a>
           </div>
-        </div>
+        
         <div class="col col-10 col-xl-2 mt-5 pb-5">
+          <a href="https://www.instagram.com/checho.basile/?hl=es" target="_blank">
           <div class="card" id="instagram">
             <div class="card-body text-center">
               <i class="fa-brands fa-instagram"></i>
@@ -343,16 +352,20 @@
               <p class="card-text text-start mt-5">@sergiobasile</p>
             </div>
           </div>
+          </a>
         </div>
         <div class="col col-10 col-xl-2 mt-5 pb-5">
-          <div class="card" id="twitter">
-            <div class="card-body text-center">
-              <i class="fa-brands fa-twitter"></i>
-              <h5 class="card-title mt-5">Twitter</h5>
-              <p class="card-text text-start mt-5">@sergiobasile</p>
+          <a href="https://twitter.com/chechobasile" target="_blank">
+            <div class="card" id="twitter">
+              <div class="card-body text-center">
+                <i class="fa-brands fa-twitter"></i>
+                <h5 class="card-title mt-5">Twitter</h5>
+                <p class="card-text text-start mt-5">@sergiobasile</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
       </div>
     </section>
 

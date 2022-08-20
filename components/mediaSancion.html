@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body>
+  <body onload="loadData()">
     <header class="container">
       <div class="row justify-content-end text-center">
         <div class="col col-1 iconsDiv">
@@ -74,29 +74,8 @@
     </section>
 
     <section class="container mt-5 mb-5">
-      <div class="row justify-content-center">
-        <div class="col col-8 mb-5 border-bottom">
-          <div class="row">
-            <div class="col col-3 p-3">
-              <img src="../img/my.png" width="100%" class="img-fluid"  alt="">
-            </div>
-            <div class="col col-9 p-3">
-                <span class="blueSpan">Contacta con Nosotros</span>
-                <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus at vitae optio eveniet illo dicta, perferendis inventore iure dolores placeat corrupti, numquam doloremque? Doloribus possimus totam error repellat, in nisi.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col col-8 mb-5">
-          <div class="row">
-            <div class="col col-3 p-3">
-              <img src="../img/my.png" width="100%" class="img-fluid"  alt="">
-            </div>
-            <div class="col col-9 p-3">
-                <span class="blueSpan">Contacta con Nosotros</span>
-                <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus at vitae optio eveniet illo dicta, perferendis inventore iure dolores placeat corrupti, numquam doloremque? Doloribus possimus totam error repellat, in nisi.</p>
-            </div>
-          </div>
-        </div>
+      <div class="row justify-content-center" id="proyectosRow">
+        
       </div>
     </section>
 
@@ -135,5 +114,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../js/mediaSancion.js"></script>
   </body>
 </html>
