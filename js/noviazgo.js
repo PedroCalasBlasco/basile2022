@@ -19,8 +19,10 @@ function resuelveTest() {
     }
 
     const modalCuerpo = document.querySelector("#modalCuerpo");
-    modalCuerpo.innerHTML = `<h5>"${respuesta}"</h5><p>"Te dejamos algunas recomendaciones:<br>
-                            En caso de que sufras algún tipo de violencia podés comunicarte las 24 horas, los 365 días del año al 144 donde recibirás contención, información y asesoramiento.<br> 
-                            Acercarte a la comisaría más cercana a un Centro Territorial de Denuncias, solicitando que tomen la denuncia y llevándote una copia de la misma.<br>
-                            MPA UFE Violencia de Género, Familiar y Sexual ubicado en 3 de Febrero 3168  -  fr1gefas@mpa.santafe.gov.ar / fr1@mpa.santafe.gov.ar Emergencias 911</p>`;
+    modalCuerpo.innerHTML = `<h5>${respuesta}</h5><hr><p>Te dejamos algunas recomendaciones:</p>
+                            <ul>
+                            <li class="mt-1">En caso de que sufras algún tipo de violencia podés comunicarte las 24 horas, los 365 días del año al 144 donde recibirás contención, información y asesoramiento.<br></li>
+                            <li class="mt-1">Acercarte a la comisaría más cercana a un Centro Territorial de Denuncias, solicitando que tomen la denuncia y llevándote una copia de la misma.<br></li>
+                            <li class="mt-1">MPA UFE Violencia de Género, Familiar y Sexual ubicado en 3 de Febrero 3168  -  fr1gefas@mpa.santafe.gov.ar / fr1@mpa.santafe.gov.ar Emergencias 911</li>
+                            </ul>`;
 }

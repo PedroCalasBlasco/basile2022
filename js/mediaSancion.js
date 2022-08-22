@@ -1,10 +1,10 @@
 
 function loadData() {
-    // spinner.removeAttribute('hidden');
+    spinner.removeAttribute('hidden');
     fetch('https://sergiobasile.com/basileservice/api/proyectos/header')
     .then(response => response.json())
         .then(data => {
-            // spinner.setAttribute('hidden', '');
+            spinner.setAttribute('hidden', '');
             const proyectosRow = document.querySelector("#proyectosRow");
             console.log(data);  
             proyectosRow.innerHTML = data.map(item => {

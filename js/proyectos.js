@@ -1,11 +1,11 @@
 
 
 function loadData() {
-
+	spinner.removeAttribute('hidden');
 	fetch(' https://sergiobasile.com/basileservice/api/proyectos')
 		.then(response => response.json())
 		.then(data => {
-	
+			spinner.setAttribute('hidden', '');
 			console.log(data);
 		
 			var table = new Tabulator("#example-table", {
