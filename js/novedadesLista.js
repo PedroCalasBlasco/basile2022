@@ -10,7 +10,7 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/header')
             let dia = item.fecha.substring(3, 5);
             let anyo = item.fecha.substring(6, 10);
 
-            return `<div class="col col-3 mt-4 p-4">
+            return `<div class="col col-10 col-xl-3 mt-4 p-4">
                         <div class="card">
                             <img src="data:image/jpeg;base64, ${item.imagen}" alt="">
                             <div class="card-body text-start">

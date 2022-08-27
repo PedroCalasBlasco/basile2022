@@ -8,14 +8,14 @@ function loadData() {
             const proyectosRow = document.querySelector("#proyectosRow");
             console.log(data);  
             proyectosRow.innerHTML = data.map(item => {
-                return `<div class="col col-8 mb-5 border-bottom">
-                            <div class="row">
-                                <div class="col col-3 p-3">
+                return `<div class="col col-12 col-xl-8 mb-5 border-bottom">
+                            <div class="row justify-content-center text-center">
+                                <div class="col col-10 col-xl-3 p-3">
                                 <img src="data:image/jpeg;base64, ${item.imagen}" width="100%" class="img-fluid"  alt="">
                                 </div>
-                                <div class="col col-9 p-3">
+                                <div class="col col-10 col-xl-9 p-3">
                                     <span class="blueSpan">${item.nombre}"</span>
-                                    <p class="mt-4">${item.descripcion}</p>
+                                    <p class="mt-4 text-start">${item.descripcion}</p>
                                 </div>
                             </div>
                         </div>`

@@ -1,23 +1,12 @@
 
-
-
-
-
-
-
-
-
-
-
-
 function loadData() {
 
-spinner.removeAttribute('hidden');
+// spinner.removeAttribute('hidden');
     
 fetch('https://sergiobasile.com/basileservice/api/noticias/header')
     .then(response => response.json())
     .then(data => {
-        spinner.setAttribute('hidden', '');            
+        // spinner.setAttribute('hidden', '');            
         // localStorage.setItem('data', data);
 
 

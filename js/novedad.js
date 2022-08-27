@@ -35,7 +35,7 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/header')
         for (let i = 0; i <= 2; i++) {
             primerasTresNoticias.push(data[i]);
         }  
-        recentContent.innerHTML += primerasTresNoticias.map(item => {
+        let contenido = primerasTresNoticias.map(item => {
             return `<div class="col col-5">
                         <img src="data:image/jpeg;base64, ${item.imagen}" class="img-fluid" alt="">
                     </div>
@@ -44,6 +44,7 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/header')
                     </div>
                     `
         })
+        recentContent.innerHTML += contenido;
     });
 
 

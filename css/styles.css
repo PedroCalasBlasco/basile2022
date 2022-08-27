@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -237,8 +238,20 @@ footer i:hover{
 
 #groomingVideo{
     background-color: rgb(238, 241, 246);
+ 
 }
 
+#groomingVideo iframe{
+    width: 50%;
+    height: 415px;
+}
+
+@media (max-width: 991.98px) {
+    #groomingVideo iframe {
+            width: 80%;
+            height: 215px;
+        }
+}
 
 .textColumns p{
     
@@ -255,9 +268,35 @@ footer i:hover{
     -webkit-column-rule: 2px solid rgb(243, 114, 44);
 }
 
+@media (max-width: 991.98px) {
+    .textColumns p {
+    
+            padding: 10px;
+            width: 100%;
+            column-count: 1;
+            column-gap: 2em;
+            column-rule: 2px solid rgb(243, 114, 44);
+            -moz-column-count: 1;
+            -moz-column-gap: 2em;
+            -moz-column-rule: 2px solid rgb(243, 114, 44);
+            -webkit-column-count: 1;
+            -webkit-column-gap: 3em;
+            -webkit-column-rule: 2px solid rgb(243, 114, 44);
+        }
+}
 
 
+/* VIOLENCIA EN EL NOVIAZGO */
+@media (max-width: 991.98px) {
 
+    #groomingViolencia img{
+        width: 90%;
+    }
+
+    #groomingViolencia .displayedImg{
+        display: none;
+    }
+}
 /* PAGINA CONTACTO */
 
 #encabezado{

@@ -72,11 +72,11 @@
     <section class="container-fluid" id="map">
         <div class="row justify-content-center rowMap">
             <div class="col col-12"></div>
-            <div class="col col-6 align-self-end" id="infoContacto">
-                <div class="row text-center">
-                    <div class="col col-4 pt-3 pb-3">General López 3567</div>
-                    <div class="col col-4 pt-3 pb-3">342-457 3163 int 178</div>
-                    <div class="col col-4 pt-3 pb-3">info@sergiobasile.com</div>
+            <div class="col col-10 col-xl-6 align-self-end" id="infoContacto">
+                <div class="row text-center justify-content-center">
+                    <div class="col col-10 col-xl-4 pt-3 pb-3">General López 3567</div>
+                    <div class="col col-10 col-xl-4 pt-3 pb-3">342-457 3163 int 178</div>
+                    <div class="col col-10 col-xl-4 pt-3 pb-3">info@sergiobasile.com</div>
                 </div>
             </div>
         </div> 
@@ -90,27 +90,27 @@
                 <h2>Deja un Mensaje</h2>
             </div>
         </div>
-        <form action="submit">
+        <form  method="post" action="enviar.php" name="myemailform" class="myEmailForm">
             <div class="row justify-content-center mt-5">
-                <div class="col col-3">
+                <div class="col col-10 col-xl-3">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Asunto" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control userForm" required placeholder="Asunto" aria-label="Username" aria-describedby="basic-addon1" name="nombre" >
                     </div>
                 </div>
-                <div class="col col-3">
+                <div class="col col-10 col-xl-3">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Correo" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="email" class="form-control emailForm" required placeholder="Correo" aria-label="Username" aria-describedby="basic-addon1" name="email">
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center mt-1">
-                <div class="col col-6">
+                <div class="col col-10 col-xl-3">
                     <div class="input-group">
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <textarea class="form-control messageForm" required aria-label="With textarea" name="message"></textarea>
                     </div>
                 </div>
                 <div class="col col-12 text-center mt-4 mb-5 pb-5">
-                    <button class="btn btn-danger">Enviar</button>
+                    <button type="submit" class="btn btn-danger">Enviar</button>
                 </div>
             </div>
         </form>
@@ -149,5 +149,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>
