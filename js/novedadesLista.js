@@ -15,7 +15,7 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/header')
                             <img src="data:image/jpeg;base64, ${item.imagen}" alt="">
                             <div class="card-body text-start">
                                 <span>${dia}/${mes}/${anyo}</span>
-                                <p class="card-text text-start mt-3">${item.titulo}<</p>
+                                <p class="card-text text-start mt-3">${item.titulo}</p>
                                 <a href="novedad.html?id=${item.id}" class="card-link">Leer Más</a>
                             </div>
                         </div>
