@@ -1,9 +1,14 @@
+@font-face {
+    font-family: "Gotham_Mediun";
+    src: url("../assets/fonts/Gotham-Medium.otf");
+}
+
 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gotham_Mediun', sans-serif;
 }
 
 
@@ -50,8 +55,8 @@ nav{
 
 
 .carousel-caption {
-    bottom: 12rem !important;
-    left: 17% !important;
+    bottom: 15rem !important;
+    left: 12% !important;
     text-align: start !important;
     width: 30% !important;
 }
