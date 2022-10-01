@@ -7,6 +7,16 @@ function loadData() {
 		.then(data => {
 			spinner.setAttribute('hidden', '');
 			console.log(data);
+
+			data.map((item) => {
+				let mes = item.fecha.substring(0, 2);
+				let dia = item.fecha.substring(3, 5);
+				let anyo = item.fecha.substring(6, 10);
+
+				item.dateEq = `${dia}/${mes}/${anyo}`
+
+			})
+		
 		
 			var table = new Tabulator("#example-table", {
 				height: 205,
@@ -17,7 +27,7 @@ function loadData() {
 					{ title: "Título", field: "nombre", width: 810 },
 					{ title: "Expediente", field: "numexpediente", width: 150 },
 					{ title: "Tipo", field: "tipo", width: 150  },
-					{ title: "Fecha", field: "fecha", sorter: "date", width: 150 },
+					{ title: "Fecha", field: "dateEq", sorter: "date", width: 150 },
 				],
 			});
 
