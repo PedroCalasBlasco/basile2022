@@ -6,7 +6,7 @@ console.log(url);
 console.log(urlArrary[1].split("=")[1]);
 
 spinner.removeAttribute('hidden');
-fetch('https://sergiobasile.com/basileservice/api/noticias/'+urlArrary[1].split("=")[1])
+fetch('https://sergiobasile.com/basileservice/api/proyectos/'+urlArrary[1].split("=")[1])
   .then(response => response.json())
     .then(data => {
         spinner.setAttribute('hidden', '');  
@@ -15,17 +15,17 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/'+urlArrary[1].split(
         let dia = data.fecha.substring(3, 5);
         let anyo = data.fecha.substring(6, 10);
 
-        const novedadContent = document.querySelector("#novedadContent");
+        const novedadContent = document.querySelector("#leyContent");
          novedadContent.innerHTML += `<img src="data:image/jpeg;base64, ${data.imagen}" class="img-fluid mt-5" alt="">
                                         <p class="mt-5">${dia}/${mes}/${anyo}</p>
-                                        <h3 class="mt-5">${data.titulo}</h3>
-                                        <p class="mt-5 text_light">${data.cuerpo}</p>
+                                        <h3 class="mt-5">${data.nombre}</h3>
+                                        <p class="mt-5 text_light">${data.descripcion}</p>
                                     `
     });
 
 
 
-fetch('https://sergiobasile.com/basileservice/api/noticias/header')
+fetch('https://sergiobasile.com/basileservice/api/proyectos/header')
   .then(response => response.json())
     .then(data => {
         const recentContent = document.querySelector("#recentContent");
@@ -40,7 +40,7 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/header')
                         <img src="data:image/jpeg;base64, ${item.imagen}" class="img-fluid" alt="">
                     </div>
                     <div class="col col-7">
-                        <p class="text_light">${item.titulo}</p>
+                        <p class="text_light">${item.nombre}</p>
                     </div>
                     `
         })

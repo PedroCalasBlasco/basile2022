@@ -15,7 +15,7 @@ function loadData() {
                                 </div>
                                 <div class="col col-10 col-xl-9 p-3">
                                     <span class="blueSpan">${item.nombre}"</span>
-                                    <p class="mt-4 text-start">${item.descripcion}</p>
+                                    <p class="mt-4 text-start text_light">${item.descripcion}</p>
                                 </div>
                             </div>
                         </div>`

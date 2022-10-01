@@ -3,12 +3,21 @@
     src: url("../assets/fonts/Gotham-Medium.otf");
 }
 
+@font-face {
+    font-family: "Gotham_Light";
+    src: url("../assets/fonts/Gotham-Light.otf");
+}
+
 
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Gotham_Mediun', sans-serif;
+}
+
+.text_light{
+    font-family: 'Gotham_Light', sans-serif;
 }
 
 
@@ -55,15 +64,36 @@ nav{
 
 
 .carousel-caption {
-    bottom: 15rem !important;
-    left: 12% !important;
-    text-align: start !important;
-    width: 30% !important;
+    bottom: 33% !important;
+    left: 9% !important;
+    text-align: center !important;
+    width: 33% !important;
+}
+
+#carousel-caption-grooming {
+    bottom: 35% !important;
+    left: 9% !important;
+    text-align: center !important;
+    width: 33% !important;
+}
+
+#carousel-caption-grooming h5 {
+    font-family: 'Gotham_Light', sans-serif;
+    font-size: 2.75em;
+}
+
+#carousel-caption-grooming h3 {
+    font-size: 3.5em;
 }
 
 
 .carousel-caption h5{
+    font-family: 'Gotham_Light', sans-serif;
     font-size: 2.25em;
+}
+
+.carousel-caption h3 {
+    font-size: 3em;
 }
 
 
