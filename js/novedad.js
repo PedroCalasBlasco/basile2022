@@ -25,18 +25,13 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/'+urlArrary[1].split(
 
 
 
-fetch('https://sergiobasile.com/basileservice/api/noticias/header')
+fetch('https://sergiobasile.com/basileservice/api/noticias/first')
   .then(response => response.json())
     .then(data => {
         const recentContent = document.querySelector("#recentContent");
-        console.log(data);
         dataArrayGlobal = data;
-        let primerasTresNoticias = [];
-        for (let i = 0; i <= 2; i++) {
-            primerasTresNoticias.push(data[i]);
-        }  
         recentContent.innerHTML = ""
-        let contenido = primerasTresNoticias.map(item => {
+        let contenido = data.map(item => {
             recentContent.innerHTML +=`<div class="col col-5 mb-4">
                         <img src="data:image/jpeg;base64, ${item.imagen}" class="img-fluid" alt="">
                     </div>

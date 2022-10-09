@@ -3,7 +3,7 @@ function loadData() {
 
 // spinner.removeAttribute('hidden');
     
-fetch('https://sergiobasile.com/basileservice/api/noticias/header')
+fetch('https://sergiobasile.com/basileservice/api/noticias/first')
     .then(response => response.json())
     .then(data => {
         // spinner.setAttribute('hidden', '');            
@@ -14,15 +14,9 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/header')
     
     const noticiasRow = document.querySelector("#noticiasRow");
 
-    let primerasTresNoticias = [];
+    console.log(data);
 
-    for (let i = 0; i <= 2; i++) {
-        primerasTresNoticias.push(data[i]);
-    }  
-
-    console.log(primerasTresNoticias);
-
-    noticiasRow.innerHTML = primerasTresNoticias.map(item => {
+    noticiasRow.innerHTML = data.map(item => {
 
         let mes = item.fecha.substring(0,2);
         let dia = item.fecha.substring(3, 5);

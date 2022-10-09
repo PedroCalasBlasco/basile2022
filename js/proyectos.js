@@ -2,7 +2,7 @@
 
 function loadData() {
 	spinner.removeAttribute('hidden');
-	fetch(' https://sergiobasile.com/basileservice/api/proyectos')
+	fetch(' https://sergiobasile.com/basileservice/api/proyectos/noimages')
 		.then(response => response.json())
 		.then(data => {
 			spinner.setAttribute('hidden', '');
