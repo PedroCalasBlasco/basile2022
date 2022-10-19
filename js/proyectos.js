@@ -19,7 +19,7 @@ function loadData() {
 		
 		
 			var table = new Tabulator("#example-table", {
-				height: 205,
+				height: 505,
 				width: 900, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed
 				data: data, //assign data to table
 				layout: "fitColumns", //fit columns to width of table (optional)
