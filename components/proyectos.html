@@ -42,7 +42,7 @@
 
     <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt=""></a>
+      <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"  width="34%" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="background-color: rgb(243,114,44);color:rgb(243,114,44);"></span>
       </button>
@@ -77,8 +77,20 @@
     </section>
 
     <section class="container my-5">
-      <div id="example-table">
-        <div hidden id="spinner"></div>
+      <div class="row mb-3 justify-content-end">
+        <div class="col-12 col-xl-4">   
+          <label for="">Filtrar por Nombre o Expediente</label> 
+          <div class="input-group">
+            <input id="filter-value" type="text"  class="form-control" oninput="filterData()">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-12">
+          <div id="example-table">
+            <div hidden id="spinner"></div>
+          </div>
+        </div>
       </div>
     </section>
 

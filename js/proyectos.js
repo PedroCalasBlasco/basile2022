@@ -1,5 +1,14 @@
+var fieldEl = document.getElementById("filter-field");
+var valueEl = document.getElementById("filter-value");
+var table = "";
 
+function filterData() {
+	table.setFilter([
+		[ {field:"nombre", type:"like", value: valueEl.value},{ field: "numexpediente", type: "like", value: valueEl.value }]  
+	]);
+}
 
+			
 function loadData() {
 	spinner.removeAttribute('hidden');
 	fetch(' https://sergiobasile.com/basileservice/api/proyectos/noimages')
@@ -16,26 +25,28 @@ function loadData() {
 				item.dateEq = `${dia}/${mes}/${anyo}`
 
 			})
+
 		
-		
-			var table = new Tabulator("#example-table", {
+			table = new Tabulator("#example-table", {
 				height: 505,
 				width: 900, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed
 				data: data, //assign data to table
 				layout: "fitColumns", //fit columns to width of table (optional)
 				columns: [ //Define Table Columns
-					{ title: "Título", field: "nombre", width: 810 },
-					{ title: "Expediente", field: "numexpediente", width: 150 },
-					{ title: "Tipo", field: "tipo", width: 150  },
-					{ title: "Fecha", field: "dateEq", sorter: "date", width: 150 },
+					{ title: "Título", field: "nombre", width: 810, sorter:"string" },
+					{ title: "Expediente", field: "numexpediente", width: 150, sorter:"string" },
+					{ title: "Tipo", field: "tipo", width: 150, sorter:"string"  },
+					{ title: "Fecha", field: "dateEq", width: 150 },
 				],
 			});
 
 			//trigger an alert message when the row is clicked
 			table.on("rowClick", function (e, row) {
 				let a = document.createElement("a");
-				a.setAttribute.src = row.getData().enlace;
-				console.log(a);
+				a.target= '_blank';
+				a.href= row.getData().enlace;
+				a.click();
+			
 			});
 		
 		});

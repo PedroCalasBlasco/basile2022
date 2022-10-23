@@ -11,7 +11,7 @@ function resuelveTest() {
     let respuesta = "";
 
     if (resultado <= 2) {
-        respuesta = "Tu relación no posee indicadores de violencia de gravedad. La comunicación y el respeto mutuo son primordiales en para un vínculo de confianza y afecto.";
+        respuesta = "Tu relación no posee indicadores de violencia de gravedad. La comunicación y el respeto mutuo son primordiales para un vínculo de confianza y afecto.";
     } else if (resultado > 2 && resultado <= 15) {
         respuesta = "Tu noviazgo tiene indicadores de violencia. Poner límites a través de la palabra y el diálogo es indispensable. Si esto no funciona puede ser necesario terminar la relación. Se recomienda iniciar tratamiento psicológico para fortalecer la autoestima."
     } else {
