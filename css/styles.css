@@ -410,3 +410,28 @@ footer i:hover{
         transform: rotate(360deg);
     }
 }
+
+#map {
+    height: 50vh;
+    background-color: rgb(238, 241, 246);
+}
+
+
+
+
+#containerContact{
+    height: 50vh;
+    background-image: url('../img/portada/8.png');
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-size: cover;
+}
+
+#containerContact .rowMap {
+    height: 50vh;
+}
+
+#containerContact #infoContacto {
+    background-color: rgb(67, 170, 139);
+    color: white;
+}
