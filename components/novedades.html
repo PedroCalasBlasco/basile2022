@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
+  <style>
+    @media (max-width: 991.98px) {
+      #paginationNav{
+        font-size: 9px;
+      }
+    }
+  </style>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTMFNY9VSS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -95,6 +103,31 @@
           <div hidden id="spinner"></div>
         </div>
     </section>
+
+    <nav aria-label="Page navigation example" class="container-fluid d-flex text-center justify-content-center" id="paginationNav">
+      <div class="row">
+        <div class="col col-12">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" onclick="previousPage()" aria-label="Previous" style="cursor: pointer">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <div class="d-flex" id="listPagination">
+              <div hidden id="spinner2"></div>
+            </div>
+            <li class="page-item">
+              <a class="page-link" onclick="nextPage()"  aria-label="Next" style="cursor: pointer">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+ 
+    </nav>
 
 
    <footer class="container-fluid">
