@@ -1,11 +1,6 @@
 
-console.log(spinner)
-
-
 spinner.removeAttribute('hidden');
 
-
-console.log(spinner)
 // NAVEGACION DE PAGINAS
 
 let paginaActual = 1
@@ -17,27 +12,30 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/count')
     
 
     if( data % 6 === 0){
-        totalPaginas = Math.floor(data / 12)
+        totalPaginas = Math.floor(data / 6)
     }else{
-        totalPaginas = Math.floor( data / 12 + 1)
+        totalPaginas = Math.floor( data / 6 + 1)
     }
 
-   
+
 
     const listPagination = document.querySelector("#listPagination");
 
     let contador = 1
 
-    for(let i = totalPaginas; i>= 1; i--){
+    for(let i = 1; i < totalPaginas; i++){
       
       if(i === totalPaginas){
-        listPagination.innerHTML += `<li class="page-item active item-number" id="item${contador}" style="cursor: pointer"><a class="page-link" onclick="goToPage(${contador})">${i}</a></li>`
+        listPagination.innerHTML += `<li class="page-item active item-number" id="item${i}" style="cursor: pointer"><a class="page-link" onclick="goToPage(${i})">${i}</a></li>`
       }else{
-        listPagination.innerHTML += `<li class="page-item item-number" id="item${contador}" style="cursor: pointer"><a class="page-link" onclick="goToPage(${contador})">${i}</a></li>`
+        listPagination.innerHTML += `<li class="page-item item-number" id="item${i}" style="cursor: pointer"><a class="page-link" onclick="goToPage(${i})">${i}</a></li>`
       } 
       
        contador = contador + 1;
     }
+
+    const item =  document.querySelector(`#item${paginaActual}`);
+    item.className += " active"
 
 
     });
@@ -45,14 +43,16 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/count')
 
 // PRIMERA LLAMADA A LAS PAGINAS    
 
-fetch('https://sergiobasile.com/basileservice/api/noticias/page/1/12')
+
+fetch('https://sergiobasile.com/basileservice/api/noticias/page/1/6')
   .then(response => response.json())
     .then(data => {
 
-    
-
         const noticiasContent = document.querySelector("#noticiasContent");
-        noticiasContent.innerHTML = data.map(item => {
+        noticiasContent.innerHTML += data.map(item => {
+
+          spinner.setAttribute('hidden', false);
+          
 
             let mes = item.fecha.substring(0,2);
             let dia = item.fecha.substring(3, 5);
@@ -77,9 +77,9 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/page/1/12')
   // IR AL NUMERO DE PAGINA SELECCIONADA
 
   function goToPage(i){
-    spinner.setAttribute('hidden', true); 
+    spinner.removeAttribute('hidden'); 
     paginaActual = i
-    console.log("IIII", paginaActual)
+
 
     const itemNumber = document.querySelectorAll(".item-number");
     itemNumber.forEach((item) => {
@@ -90,15 +90,13 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/page/1/12')
 
     const item =  document.querySelector(`#item${i}`);
 
-    console.log(item)
     item.className += " active"
 
-    fetch(`https://sergiobasile.com/basileservice/api/noticias/page/${i}/12`)
+    fetch(`https://sergiobasile.com/basileservice/api/noticias/page/${i}/6`)
   .then(response => response.json())
     .then(data => {
 
-        console.log("MYDATA", data)
-        //  spinner.setAttribute('hidden', ''); 
+        spinner.setAttribute('hidden', false);
       
         noticiasContent.innerHTML = data.map(item => {
 
@@ -123,6 +121,9 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/page/1/12')
 
 
   function previousPage(){
+
+    spinner.removeAttribute('hidden'); 
+
     if(paginaActual !== 1){
       paginaActual = paginaActual - 1
     }else{
@@ -139,11 +140,11 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/page/1/12')
 
     noticiasContent.innerHTML = ""
 
-    fetch(`https://sergiobasile.com/basileservice/api/noticias/page/${paginaActual}/12`)
+    fetch(`https://sergiobasile.com/basileservice/api/noticias/page/${paginaActual}/6`)
     .then(response => response.json())
       .then(data => {
-          //  spinner.setAttribute('hidden', ''); 
-          console.log(data)
+          spinner.setAttribute('hidden', false);
+       
         
           noticiasContent.innerHTML = data.map(item => {
   
@@ -165,13 +166,16 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/page/1/12')
           })
       });
 
-    console.log(paginaActual)
+
     
 
   }
 
 
   function nextPage(){
+
+    spinner.removeAttribute('hidden'); 
+
     if(paginaActual !== totalPaginas){
       paginaActual = paginaActual + 1
     }else{
@@ -188,13 +192,13 @@ fetch('https://sergiobasile.com/basileservice/api/noticias/page/1/12')
 
     noticiasContent.innerHTML = ""
 
-    fetch(`https://sergiobasile.com/basileservice/api/noticias/page/${paginaActual}/12`)
+    fetch(`https://sergiobasile.com/basileservice/api/noticias/page/${paginaActual}/6`)
     .then(response => response.json())
       .then(data => {
 
-        console.log(data)
+       
 
-          //  spinner.setAttribute('hidden', ''); 
+        spinner.setAttribute('hidden', false);
         
           noticiasContent.innerHTML = data.map(item => {
   
